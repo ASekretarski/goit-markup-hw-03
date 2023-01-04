@@ -5,12 +5,40 @@
     --primary-brand-color: #2196F3;
     --secondary-brand-color: #F5F4FA;
     --tertiary-brand-color: #000000;
+    --primary-bgrd-color: #2F303A;
+    --secondary-bgrd-color: #F5F4FA;
+    --tertiary-bgrd-color: #ECECEC;
 }
     
 body {
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
 }
+
+.container {
+width: 1200px;
+margin: 0 auto;
+border: 1px solid black;
+}
+
+.headline,
+.agency h2 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    border-bottom: 1px solid var(--tertiary-bgrd-color);
+    padding: 24px 0px;
+}
+
+.header .flex {
+    align-items: center;
+}
+
 .link {
     text-decoration: none;
     font-size: 14px;
@@ -60,6 +88,8 @@ body {
     border: 0px;
     line-height: 1.88;
 }
+
+
 .list .button {
     font-weight: 500;
     background-color: var(--secondary-brand-color);
@@ -85,6 +115,27 @@ body {
 .link:active {
     color: var(--primary-brand-color);
 }
+
+.headline {
+    background-color: var(--primary-bgrd-color);
+}
+
+.our-team {
+    background-color: var(--secondary-bgrd-color);
+}
+
+.footer {
+    background-color: var(--primary-bgrd-color);
+}
+
+.heading {
+    margin: 0 auto;
+}
+
+.list.flex {
+    margin: 0 auto;
+}
+
 .headline .heading {
     font-size: 44px;
     line-height: 1.36;
