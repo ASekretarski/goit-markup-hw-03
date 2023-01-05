@@ -8,36 +8,17 @@
     --primary-bgrd-color: #2F303A;
     --secondary-bgrd-color: #F5F4FA;
     --tertiary-bgrd-color: #ECECEC;
+    --quaternary-bgrd-color: #EEEEEE;
 }
     
+/* global */
+
 body {
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
 }
 
-.container {
-width: 1200px;
-margin: 0 auto;
-border: 1px solid black;
-}
-
-.headline,
-.agency h2 {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.header {
-    border-bottom: 1px solid var(--tertiary-bgrd-color);
-    padding: 24px 0px;
-}
-
-.header .flex {
-    align-items: center;
-}
+/* buttons and links*/
 
 .link {
     text-decoration: none;
@@ -45,6 +26,7 @@ border: 1px solid black;
     font-weight: 500;
     line-height: 1.14;
 }
+
 .address {
     text-decoration: none;
     font-size: 14px;
@@ -52,15 +34,19 @@ border: 1px solid black;
     font-style: normal;
     line-height: 1.71;
 }
+
 .address .link {
     line-height: 1.71;
 }
+
 .link.active {
     color: var(--primary-brand-color);
 }
+
 .link.contact {
     color: var(--secondary-text-color);
 }
+
 .link.logo,
 .link.logo:visited {
     font-family: Raleway, sans-serif;
@@ -69,16 +55,20 @@ border: 1px solid black;
     color: var(--tertiary-brand-color);
     line-height: 1.19;
 }
+
 .link.logo.footer {
     color: var(--tertiary-text-color);
 }
+
 .logo-blue,
 .logo-blue:visited {
     color: var(--primary-brand-color);
 }
+
 .list {
     list-style-type: none;
 }
+
 .button {
     cursor: pointer;
     font-size: 16px;
@@ -95,8 +85,11 @@ border: 1px solid black;
     background-color: var(--secondary-brand-color);
     color: var(--primary-text-color);
     line-height: 1.63;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;;
 
 }
+
 .list .button:hover,
 .list .button:focus {
     font-weight: 500;
@@ -104,17 +97,73 @@ border: 1px solid black;
     color: var(--tertiary-text-color);
 
 }
+
 .address li {
     color: var(--tertiary-text-color);
 }
+
 .address .link {
     color: var(--tertiary-text-color);
     opacity: 60%;
 }
+
 .link:hover,
 .link:active {
     color: var(--primary-brand-color);
 }
+
+/* font styles and colors */
+
+.headline .heading {
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    color: var(--tertiary-text-color);
+}
+
+.about .heading {
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.what-we-do .heading {
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.our-team .heading {
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.our-team .list .heading {
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 500;
+}
+
+.examples .heading {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.about .txt-gray {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+.our-team .txt-gray {
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+.examples .txt-gray {
+    line-height: 1.88;
+    color: var(--secondary-text-color);
+}
+
+/* background colors */
 
 .headline {
     background-color: var(--primary-bgrd-color);
@@ -128,51 +177,80 @@ border: 1px solid black;
     background-color: var(--primary-bgrd-color);
 }
 
-.heading {
-    margin: 0 auto;
+/* geometry */
+
+.container {
+width: 1200px;
+margin: 0 auto;
+padding: 0px 15px;
+}
+
+.flex {
+    display: flex;
+    padding: 0px;
 }
 
 .list.flex {
     margin: 0 auto;
 }
 
-.headline .heading {
-    font-size: 44px;
-    line-height: 1.36;
-    font-weight: 900;
-    color: var(--tertiary-text-color);
+.headline,
+.agency h2 {
+    text-align: center;
 }
-.about .heading {
-    font-size: 14px;
-    line-height: 1.14;
+
+.header {
+    border-bottom: 1px solid var(--tertiary-bgrd-color);
+    padding: 24px 0px;
 }
-.what-we-do .heading {
-    font-size: 36px;
-    line-height: 1.17;
+
+.header .flex {
+    align-items: center;
 }
-.our-team .heading {
-    font-size: 36px;
-    line-height: 1.17;
+
+.heading {
+    margin: 0 auto;
 }
-.our-team .list .heading {
-    font-size: 16px;
-    line-height: 1.19;
-    font-weight: 500;
+
+.filter .flex {
+    justify-content: center;
 }
-.examples .heading {
-    font-size: 18px;
-    line-height: 2;
+
+.filter .list-item {
+    margin: 0px 4px 0px 4px;
 }
-.about .txt-gray {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--secondary-text-color);
+
+.filter .list-item:first-child {
+    margin-left: 0px;
 }
-.our-team .txt-gray {
-    line-height: 1.19;
-    color: var(--secondary-text-color);
+
+.filter .list-item:last-child {
+    margin-right: 0px;
 }
-.examples .txt-gray {
-    line-height: 1.88;
-    color: var(--secondary-text-color);
+
+.examples {
+    padding: 34px 0px 94px 0px
+}
+
+.filter {
+    padding: 94px 0px 16px;
+}
+
+.portfolio .flex {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.img-description {
+    border-width: 0px 1px 1px 1px;
+    border-color: var(--quaternary-bgrd-color);
+    border-style: solid;
+}
+
+.example-img {
+    display: block;
+}
+
+.headline .container {
+    padding: 200px 252px 200px 252px;
 }
