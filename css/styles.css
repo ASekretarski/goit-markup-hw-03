@@ -225,6 +225,7 @@ padding: 0px 15px;
 
 .header .flex {
     align-items: center;
+    gap: 93px;
 }
 
 .heading {
@@ -285,12 +286,9 @@ padding: 0px 15px;
     margin-bottom: 10px;
 }
 
-.about .list-item {
-    width: 270px;
-}
-
 .about .flex {
     justify-content: space-between;
+    gap: 30px;
 }
 
 .what-we-do.section {
@@ -325,19 +323,17 @@ padding: 0px 15px;
     margin-bottom: 10px;
 }
 
-.nav-menu .flex {
-    margin-left: 93px;
-    width: 261px;
-    justify-content: space-between;
+.nav-menu {
+    flex: 1;
 }
 
-.contacts {
-    margin-left: 364px;
-    width: 295px;
+.nav-menu .flex {
+    gap: 46px;
 }
 
 .contacts .flex {
     justify-content: space-between;
+    gap: 50px;
 }
 
 .footer .container {
